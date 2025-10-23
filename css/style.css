@@ -1,3 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+    color: white;
+}
+body{
+    background-color: black;
+}
 .navbar {
     background-color: #4169A8 !important;
     padding: 0.5rem 2rem;
@@ -24,4 +34,64 @@
 
 .navbar-nav .nav-link:hover {
     opacity: 0.8;
+}
+#uslugi{
+    border: solid white;
+    padding: 30px;
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+}
+#uslugi table{
+    width: 100%;
+    margin: 0 auto;
+}
+#uslugi img{
+    width: 80%;
+    padding: 30px;
+    display: block;
+    margin: 0 auto;
+}
+#uslugi td{
+    background-color: #325CAA;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#uslugi tr{
+    display: flex;
+    justify-content: space-around;
+}
+#podpisy{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 10px;
+}
+#podpisy p{
+    flex: 1;
+    margin: 0;
+    padding: 0;
+}
+#nagluwek{
+    text-align: center;
+    width: 650px;
+    height: auto;
+    margin: 20px auto;
+}
+#diagnoza{
+    text-align: center;
+    align-self: center;
+    margin: 0;
+    padding: 0;
+}
+#diagnoza h3{
+    background-color: #325CAA;
+    margin: 0;
+    padding: 0;
 }
