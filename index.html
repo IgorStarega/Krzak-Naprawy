@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl" class="h-100">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="d-flex flex-column h-100">
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
@@ -36,15 +36,17 @@
             </div>
         </div>
     </nav>
-    <div>
+    <main class="flex-grow-1">
         <div id="nagluwek">
             <h1>Profesjonalna naprawa komputerów i urządzeń elektronicznych</h1><br>
             <p>Szybko, niezawodnie i z gwarancją</p>
         </div>
-        <div id="diagnoza">
-            <h3>Darmowa diagnoza</h3>
+        <div class="center-container">
+            <div id="diagnoza">
+                <h3>Darmowa diagnoza</h3>
+            </div>
         </div>
-        <h1>Nasze usługi</h1><br>
+        <h1 id="uslugi-tekst">Nasze usługi</h1><br>
         <div id="uslugi">
             <table>
                 <tr>
@@ -69,13 +71,21 @@
                 <p>Konsole</p>
             </div>
         </div>
-        <p>Aktualności:</p>
-        <table>
-            <tr><td>2 października 2025 – Bezpłatna diagnoza sprzętu przez cały miesiąc! Zachęcamy do skorzystania z promocji.</td></tr>
-            <tr><td>28 września 2025 – Wprowadziliśmy usługę ekspresowej wymiany pasty termoprzewodzącej – Twój komputer będzie działać wydajniej i chłodniej.</td></tr>
-            <tr><td>20 września 2025 – Nasz serwis powiększył ofertę! Od teraz naprawiamy również tablety i konsole.</td></tr>
-        </table>
-    </div>
+        <div id="aktualnosci">
+             <p>Aktualności:</p>
+            <table>
+                <tr><td>2 października 2025 – Bezpłatna diagnoza sprzętu przez cały miesiąc! Zachęcamy do skorzystania z promocji.</td></tr>
+                <tr><td>28 września 2025 – Wprowadziliśmy usługę ekspresowej wymiany pasty termoprzewodzącej – Twój komputer będzie działać wydajniej i chłodniej.</td></tr>
+                <tr><td>20 września 2025 – Nasz serwis powiększył ofertę! Od teraz naprawiamy również tablety i konsole.</td></tr>
+            </table>   
+        </div>
+    </main>
+    <footer class="footer mt-auto py-2">
+        <div class="container-fluid">
+            <p class="mb-1 small">Krzak Naprawy S.A. | Adres: ul. Łączna 44, 68-213 Lipinki łużyckie | E-mail: naprawy@krzak.pl | Tel.: +48 123 456 789</p>
+            <p class="mb-0 small">© 2025 Krzak Naprawy S.A. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
     <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
