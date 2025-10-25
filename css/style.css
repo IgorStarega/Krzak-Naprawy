@@ -35,6 +35,10 @@ html, body{
     opacity: 0.8;
 }
 
+.navbar-nav .nav-link.active {
+    color: black !important;
+}
+
 #nagluwek h1{
     font-size: 2.5rem;
 }
