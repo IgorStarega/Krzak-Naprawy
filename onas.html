@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl" class="h-100">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,23 +8,23 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="d-flex flex-column h-100">
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="img/logo-kopia.png" alt="Logo">
+            <a class="navbar-brand d-flex align-items-center fs-4 fw-medium" href="index.html">
+                <img src="img/logo-kopia.png" alt="Logo" width="40" height="40">
                 Krzak Naprawy S.A.
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav fs-5">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Strona główna</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="onas.html">O nas</a>
+                        <a class="nav-link active fw-bold" href="onas.html">O nas</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="serwis.html">Serwis</a>
@@ -36,14 +36,54 @@
             </div>
         </div>
     </nav>
-    <div class="container-fluid text-center">
-        <ul class="list-unstyled">
-            <li>Krzak Naprawy S.A. to zespół pasjonatów nowych technologii, którzy od lat pomagają klientom w szybkiej i skutecznej naprawie komputerów oraz urządzeń elektronicznych. Specjalizujemy się w serwisowaniu kart graficznych, procesorów, telefonów, urządzeń multimedialnych oraz w budowie gotowych zestawów komputerowych.</li>
-            <li>Naszym priorytetem jest bezpieczeństwo danych, rzetelność oraz szybki czas realizacji zleceń. Po każdej diagnozie otrzymasz jasne informacje o koszcie i zakresie naprawy, a na wykonane usługi dajemy pisemną gwarancję. Działamy lokalnie, ale obsługujemy klientów z całej Polski - ceniąc sobie partnerskie ralacje, otwartość i Tranparentość.</li>
-            <li>Wybierając Krzak Naprawy S.A. możesz liczyć na profesjonalny serwis, indywidualne podejście oraz wsparcie na każdym etapie współpracy.</li>
-        </ul>
+    <main class="flex-grow-1">
+        <div class="container-fluid px-4 py-4">
+            <h2 class="mb-4 text-center">O nas</h2>
+            <ul class="fs-5">
+                <li class="mb-3">Krzak Naprawy S.A. to zespół pasjonatów nowych technologii, którzy od lat pomagają klientom w szybkiej i skutecznej naprawie komputerów oraz urządzeń elektronicznych. Specjalizujemy się w serwisowaniu kart graficznych, procesorów, telefonów, urządzeń multimedialnych oraz w budowie gotowych zestawów komputerowych.</li>
+                <li class="mb-3">Naszym priorytetem jest bezpieczeństwo danych, rzetelność oraz szybki czas realizacji zleceń. Po każdej diagnozie otrzymasz jasne informacje o koszcie i zakresie naprawy, a na wykonane usługi dajemy pisemną gwarancję. Działamy lokalnie, ale obsługujemy klientów z całej Polski - ceniąc sobie partnerskie ralacje, otwartość i Tranparentość.</li>
+                <li class="mb-3">Wybierając Krzak Naprawy S.A. możesz liczyć na profesjonalny serwis, indywidualne podejście oraz wsparcie na każdym etapie współpracy.</li>
+            </ul>
+        </div>
+        <div class="container-fluid px-4 pb-4">
+            <div class="row g-4">
+            <div class="col-md-6">
+                <div class="border border-primary border-3 p-4 mb-0">
+                <h3>Godziny pracy</h3>
+                <ul class="fs-5">
+                    <li>Poniedziałek - Piątek: 9:00 - 17:00</li>
+                    <li>Sobota: 10:00 - 14:00</li>
+                    <li>Niedziela: Nieczynne</li>
+                </ul>
+                </div>
+                <div class="border border-primary border-3 p-4">
+                <h3>Kontakt</h3>
+                <ul class="fs-5">
+                    <li>Adam Murzyn</li>
+                    <li>Łączna 44, Lipinki Łużyckie</li>
+                    <li>tel.: +48 123 456 789</li>
+                    <li>e-mail: naprawy@krzak.pl</li>
+                </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div>
+                <h3>Lokalizacja</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2491.8!2d15.0841!3d51.5896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4707a7c3d3b3d3d3%3A0x0!2sLipinki%20%C5%81u%C5%BCyckie%2C%20%C5%81%C4%85czna%2044%2C%2068-214!5e0!3m2!1spl!2spl!4v1234567890" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="yes" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                </div>
+            </div>
+            </div>
+        </div>
     </div>
-    <footer class="footer mt-auto py-2">
+    </main>
+    <footer class="footer mt-auto py-2 text-center">
         <div class="container-fluid">
             <p class="mb-1 small">Krzak Naprawy S.A. | Adres: ul. Łączna 44, 68-213 Lipinki łużyckie | E-mail: naprawy@krzak.pl | Tel.: +48 123 456 789</p>
             <p class="mb-0 small">© 2025 Krzak Naprawy S.A. Wszelkie prawa zastrzeżone.</p>

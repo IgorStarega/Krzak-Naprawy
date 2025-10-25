@@ -1,14 +1,10 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: arial;
+* {
     color: white;
 }
 
-html, body{
+body {
     background-color: #1a1a1a;
-    height: 100%;
+    font-family: arial;
 }
 
 .navbar {
@@ -16,19 +12,11 @@ html, body{
 }
 
 .navbar-brand {
-    color: white !important;
-    font-size: 1.5rem;
-    font-weight: 500;
-}
-
-.navbar-brand img {
-    width: 40px;
-    height: 40px;
+    color: black !important;
 }
 
 .navbar-nav .nav-link {
     color: white !important;
-    font-size: 1.1rem;
 }
 
 .navbar-nav .nav-link:hover {
@@ -39,50 +27,26 @@ html, body{
     color: black !important;
 }
 
-#nagluwek h1{
-    font-size: 2.5rem;
-}
-
-#diagnoza-btn{
+.btn-primary {
     background-color: #4169A8 !important;
-    border: none;
-    border-radius: 50px;
-    font-size: 1.2rem;
+    border: none !important;
 }
 
-#diagnoza-btn:hover{
+.btn-primary:hover {
     background-color: #325CAA !important;
 }
 
-#uslugi{
-    border: solid white 2px;
-    max-width: 1100px;
-}
-
-.uslugi-icon{
+.uslugi-icon {
     background-color: #4169A8;
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.uslugi-icon img{
+.uslugi-icon img {
     width: 70%;
     height: 70%;
     object-fit: contain;
 }
 
-.footer{
+.footer {
     background-color: #4169A8;
 }
 
-.footer p{
-    text-align: center;
-}
-
-.bold{
-    font-weight: bold;
-}
