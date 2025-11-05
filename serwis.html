@@ -7,6 +7,27 @@
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: white;
+        }
+        main {
+            background-color: #1a1a1a;
+        }
+        .service-box {
+            background-color: #2a2a2a;
+            border: 1px solid #444;
+            padding: 15px;
+            text-align: center;
+        }
+        .offerings-container {
+            border: 2px solid #666;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto 50px auto;
+        }
+    </style>
 </head>
 <body class="d-flex flex-column h-100">
     <nav class="navbar navbar-expand-lg">
@@ -36,16 +57,93 @@
             </div>
         </div>
     </nav>
-    <h1>Serwis</h1>
-    <h3>Co oferuje nasz serwis?</h3>
-    <div class="justify-content-center fs-5 mx-4 mb-4">
-        <li>Naprawa kart graficznych</li>
-        <li>Naprawa procesorów</li>
-        <li>Naprawa zestawów komputerowych</li>
-        <li>Naprawa telefonów</li>
-        <li>Naprawa konsol</li>
-        <li>Naprawa wszystkich urządzeń multimedialnych</li>
-    </div>
+    <main class="flex-grow-1 px-4 py-4">
+        <div class="text-center mx-auto py-4">
+            <h1 class="fw-bold display-5 mb-5">Serwis</h1>
+        </div>
+        
+        <div class="text-center mb-4">
+            <h3 class="mb-4">Co oferuje nasz serwis?</h3>
+        </div>
+        
+        <div class="offerings-container" style="max-width: 90%; margin: 0 auto 50px auto;">
+            <div class="row g-0">
+            <div class="col-12 col-md-4 service-box" style="background-color: transparent; border: none;">
+            • Naprawa kart<br>graficznych
+            </div>
+            <div class="col-12 col-md-4 service-box" style="background-color: transparent; border: none;">
+            • Naprawa procesorów
+            </div>
+            <div class="col-12 col-md-4 service-box" style="background-color: transparent; border: none;">
+            • Naprawa zestawów komputerowych
+            </div>
+            <div class="col-12 col-md-4 service-box" style="background-color: transparent; border: none;">
+            • Naprawa telefonów
+            </div>
+            <div class="col-12 col-md-4 service-box" style="background-color: transparent; border: none;">
+            • Naprawa konsol
+            </div>
+            <div class="col-12 col-md-4 service-box" style="background-color: transparent; border: none;">
+            • Naprawa wszystkich urządzeń multimedialnych
+            </div>
+            </div>
+        </div>
+        
+        <div class="container" style="max-width: 600px;">
+            <h3 class="text-center mb-4">Formularz zgłoszenia naprawy</h3>
+            <form action="">
+                <div class="row mb-3 align-items-center">
+                    <div class="col-12 col-md-4 text-md-end">
+                        <label for="opis" class="form-label mb-md-0">Opis usterki</label>
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <input type="text" class="form-control" name="opis" id="opis">
+                    </div>
+                </div>
+                
+                <div class="row mb-3 align-items-center">
+                    <div class="col-12 col-md-4 text-md-end">
+                        <label for="rodzaj" class="form-label mb-md-0">Rodzaj urządzenia</label>
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <input type="text" class="form-control" name="rodzaj" id="rodzaj">
+                    </div>
+                </div>
+                
+                <div class="row mb-3 align-items-center">
+                    <div class="col-12 col-md-4 text-md-end">
+                        <label for="zdjecie" class="form-label mb-md-0">Zdjęcie usterki</label>
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <input type="file" class="form-control" name="zdjecie" id="zdjecie">
+                    </div>
+                </div>
+                
+                <div class="row mb-3 align-items-center">
+                    <div class="col-12 col-md-4 text-md-end">
+                        <label for="e-mail" class="form-label mb-md-0">E-mail</label>
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <input type="email" class="form-control" name="e-mail" id="e-mail">
+                    </div>
+                </div>
+                
+                <div class="row mb-4 align-items-center">
+                    <div class="col-12 col-md-4 text-md-end">
+                        <label for="telefon" class="form-label mb-md-0">Nr. tel.</label>
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <input type="tel" class="form-control" name="telefon" id="telefon">
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary me-2">Wyślij</button>
+                    <button type="reset" class="btn btn-secondary">Resetuj</button>
+                </div>
+            </form>
+        </div>
+    </main>
     <footer class="footer mt-auto py-3 text-center">
         <div class="container-fluid">
             <p class="mb-0">Krzak Naprawy S.A. | Adres: ul. Łączna 44, 68-213 Lipinki łużyckie | E-mail: naprawy@krzak.pl | Tel.: +48 123 456 789</p>

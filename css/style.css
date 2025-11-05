@@ -1,12 +1,18 @@
+/* Global Styles */
 * {
     color: white;
 }
 
 body {
     background-color: #1a1a1a;
-    font-family: arial;
+    font-family: Arial, sans-serif;
 }
 
+main {
+    background-color: #1a1a1a;
+}
+
+/* Navigation */
 .navbar {
     background-color: #4169A8 !important;
 }
@@ -27,6 +33,7 @@ body {
     color: black !important;
 }
 
+/* Buttons */
 .btn-primary {
     background-color: #4169A8 !important;
     border: none !important;
@@ -36,6 +43,16 @@ body {
     background-color: #325CAA !important;
 }
 
+.btn-secondary {
+    background-color: #6c757d !important;
+    border: none !important;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268 !important;
+}
+
+/* Services Icons */
 .uslugi-icon {
     background-color: #4169A8;
 }
@@ -46,7 +63,34 @@ body {
     object-fit: contain;
 }
 
+/* Service Page */
+.service-box {
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    padding: 15px;
+    text-align: center;
+}
+
+.offerings-container {
+    border: 2px solid #666;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+}
+
+/* Contact Page */
+.contact-form-container {
+    max-width: 500px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.contact-info {
+    font-weight: normal;
+    line-height: 1.6;
+}
+
+/* Footer */
 .footer {
     background-color: #4169A8;
 }
-
