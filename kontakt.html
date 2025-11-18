@@ -36,32 +36,56 @@
             </div>
         </div>
     </nav>
-    <main class="flex-grow-1 d-flex flex-column justify-content-center align-items-center py-4">
-        <div class="text-center mb-4">
-            <h1 class="fw-bold display-5">Kontakt</h1>
+    <main class="flex-grow-1 py-3 py-md-4 px-3">
+        <div class="text-center mb-4 mb-md-5">
+            <h1 class="fw-bold display-6 display-md-5">Kontakt</h1>
         </div>
         
-        <div class="contact-form-container">
-            <h3 class="text-center mb-4">Formularz kontaktowy</h3>
-            <form action="">
-                <input type="text" placeholder="Imię i nazwisko" class="form-control mb-3" required>
-                <input type="email" placeholder="E-mail" class="form-control mb-3" required>
-                <input type="text" placeholder="Temat wiadomości" class="form-control mb-3" required>
-                <textarea placeholder="Treść wiadomości" class="form-control mb-4" rows="4" required></textarea>
+        <div class="container mb-5" style="max-width: 600px;">
+            <div class="text-center mb-4">
+                <p><strong>Telefon:</strong> +48 123 456 789 (Pon-Pt: 9:00-17:00)</p>
+                <p><strong>Email:</strong> naprawy@krzak.pl</p>
+                <p><strong>Adres:</strong> ul. Łączna 44, 68-213 Lipinki łużyckie</p>
+            </div>
+        </div>
+        
+        <div class="container" style="max-width: 350px;">
+            <h3 class="text-center mb-4 fs-4 fs-md-3">Formularz kontaktowy</h3>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Imię i nazwisko</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="subject" class="form-label">Temat</label>
+                    <input type="text" class="form-control" id="subject" name="subject" required>
+                </div>
+                
+                <div class="mb-4">
+                    <label for="message" class="form-label">Wiadomość</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                </div>
+                
                 <div class="text-center">
-                    <button type="submit" class="btn btn-primary me-2 px-4">Wyślij</button>
-                    <button type="reset" class="btn btn-secondary px-4">Resetuj</button>
+                    <button type="submit" class="btn btn-primary me-2 mb-2 mb-md-0">Wyślij</button>
+                    <button type="reset" class="btn btn-secondary">Resetuj</button>
                 </div>
             </form>
         </div>
         
-        <div class="text-center mt-5">
-            <h5 class="contact-info">W razie wątpliwości prosimy o kontakt również<br>na e-mail: obsluga.klienta@krzak.pl</h5>
+        <div class="text-center mt-4 mt-md-5">
+            <p style="color: #999;">W razie wątpliwości prosimy o kontakt również<br class="d-none d-md-inline"><span class="d-md-none"> </span>na e-mail: <strong style="color: #4169A8;">obsluga.klienta@krzak.pl</strong></p>
         </div>
     </main>
     <footer class="footer mt-auto py-3 text-center">
-        <div class="container-fluid">
-            <p class="mb-0">Krzak Naprawy S.A. | Adres: ul. Łączna 44, 68-213 Lipinki łużyckie | E-mail: naprawy@krzak.pl | Tel.: +48 123 456 789</p>
+        <div class="container-fluid px-3">
+            <p class="mb-0 small">Krzak Naprawy S.A. | Adres: ul. Łączna 44, 68-213 Lipinki łużyckie | E-mail: naprawy@krzak.pl | Tel.: +48 123 456 789</p>
         </div>
     </footer>
     <script src="js/bootstrap.bundle.min.js"></script>

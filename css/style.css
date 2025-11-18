@@ -63,16 +63,23 @@ main {
     object-fit: contain;
 }
 
+@media (max-width: 767px) {
+    .uslugi-icon {
+        width: 100px !important;
+        height: 100px !important;
+    }
+}
+
 /* Service Page */
 .service-box {
     background-color: #2a2a2a;
-    border: 1px solid #444;
+    border: 1px solid #4169A8;
     padding: 15px;
     text-align: center;
 }
 
 .offerings-container {
-    border: 2px solid #666;
+    border: 2px solid #4169A8;
     padding: 20px;
     max-width: 800px;
     margin: 0 auto 50px auto;
@@ -90,7 +97,179 @@ main {
     line-height: 1.6;
 }
 
+/* Form Controls */
+input.form-control,
+textarea.form-control,
+select.form-control {
+    background-color: #2a2a2a;
+    border: 1px solid #4169A8;
+    color: white;
+}
+
+input.form-control::placeholder,
+textarea.form-control::placeholder {
+    color: #aaa;
+    opacity: 1;
+}
+
+input.form-control:focus,
+textarea.form-control:focus,
+select.form-control:focus {
+    background-color: #2a2a2a;
+    border-color: #5a8ad6;
+    color: white;
+    box-shadow: 0 0 0 0.2rem rgba(65, 105, 168, 0.25);
+}
+
+.form-label {
+    color: white;
+    font-weight: 500;
+}
+
 /* Footer */
 .footer {
     background-color: #4169A8;
+}
+
+/* Info Cards */
+.info-card {
+    background-color: #2a2a2a;
+    border: 2px solid #4169A8;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Price Items */
+.price-item {
+    background-color: #2a2a2a;
+    border-left: 4px solid #4169A8;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+/* Step Numbers */
+.step-number {
+    background-color: #4169A8;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-right: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 0.9rem !important;
+    }
+    
+    .navbar-brand img {
+        width: 30px !important;
+        height: 30px !important;
+    }
+    
+    .navbar-nav .nav-link {
+        font-size: 0.95rem !important;
+        padding: 0.4rem 0.8rem !important;
+    }
+    
+    .footer p {
+        font-size: 0.7rem !important;
+        line-height: 1.4;
+    }
+    
+    h1.display-6 {
+        font-size: 1.5rem !important;
+    }
+    
+    h2 {
+        font-size: 1.3rem !important;
+    }
+    
+    h3.fs-4, h3 {
+        font-size: 1.1rem !important;
+    }
+    
+    h5 {
+        font-size: 1rem !important;
+    }
+    
+    /* Zmniejszenie paddingu w sekcjach */
+    .border-primary {
+        padding: 15px !important;
+    }
+    
+    /* Zmniejszenie ikon na mobile */
+    .uslugi-icon {
+        width: 70px !important;
+        height: 70px !important;
+    }
+    
+    /* Zmniejszenie step-number */
+    .step-number {
+        width: 35px !important;
+        height: 35px !important;
+        font-size: 1rem !important;
+        margin-right: 10px !important;
+    }
+    
+    /* Lepsze odstępy dla list */
+    ul {
+        padding-left: 1.2rem !important;
+        font-size: 0.9rem;
+    }
+    
+    ul li {
+        margin-bottom: 0.4rem;
+    }
+    
+    /* Mniejsze buttony */
+    .btn-lg {
+        padding: 0.5rem 1.5rem !important;
+        font-size: 1rem !important;
+    }
+    
+    /* Zmniejszenie map na mobile */
+    iframe {
+        height: 200px !important;
+    }
+    
+    /* Formularz - mniejsze marginesy */
+    .form-control {
+        font-size: 0.9rem;
+        padding: 0.5rem 0.75rem;
+    }
+    
+    .form-label {
+        font-size: 0.9rem;
+        margin-bottom: 0.3rem;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+    .navbar-brand {
+        font-size: 1.1rem !important;
+    }
+    
+    h1.display-6 {
+        font-size: 1.8rem !important;
+    }
+    
+    h2 {
+        font-size: 1.5rem !important;
+    }
+    
+    h3 {
+        font-size: 1.2rem !important;
+    }
 }

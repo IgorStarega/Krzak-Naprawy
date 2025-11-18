@@ -7,27 +7,6 @@
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #1a1a1a;
-            color: white;
-        }
-        main {
-            background-color: #1a1a1a;
-        }
-        .service-box {
-            background-color: #2a2a2a;
-            border: 1px solid #444;
-            padding: 15px;
-            text-align: center;
-        }
-        .offerings-container {
-            border: 2px solid #666;
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto 50px auto;
-        }
-    </style>
 </head>
 <body class="d-flex flex-column h-100">
     <nav class="navbar navbar-expand-lg">
@@ -57,96 +36,188 @@
             </div>
         </div>
     </nav>
-    <main class="flex-grow-1 px-4 py-4">
-        <div class="text-center mx-auto py-4">
-            <h1 class="fw-bold display-5 mb-5">Serwis</h1>
+    <main class="flex-grow-1 px-3 px-md-4 py-3 py-md-4">
+        <div class="text-center mx-auto py-3 py-md-4">
+            <h1 class="fw-bold display-6 display-md-5 mb-4 mb-md-5">Serwis</h1>
         </div>
         
-        <div class="text-center mb-4">
-            <h3 class="mb-4">Co oferuje nasz serwis?</h3>
+        <div class="text-center mb-4 mb-md-5">
+            <h3 class="mb-3 mb-md-4 fs-4 fs-md-3">Co oferuje nasz serwis?</h3>
         </div>
         
-        <div class="offerings-container" style="max-width: 90%; margin: 0 auto 50px auto;">
-            <div class="row g-0">
-            <div class="col-12 col-md-4 service-box" style="background-color: transparent; border: none;">
-            • Naprawa kart<br>graficznych
-            </div>
-            <div class="col-12 col-md-4 service-box" style="background-color: transparent; border: none;">
-            • Naprawa procesorów
-            </div>
-            <div class="col-12 col-md-4 service-box" style="background-color: transparent; border: none;">
-            • Naprawa zestawów komputerowych
-            </div>
-            <div class="col-12 col-md-4 service-box" style="background-color: transparent; border: none;">
-            • Naprawa telefonów
-            </div>
-            <div class="col-12 col-md-4 service-box" style="background-color: transparent; border: none;">
-            • Naprawa konsol
-            </div>
-            <div class="col-12 col-md-4 service-box" style="background-color: transparent; border: none;">
-            • Naprawa wszystkich urządzeń multimedialnych
-            </div>
+        <div class="container px-3 mb-5" style="max-width: 900px;">
+            <div class="border border-primary border-2 p-3 p-md-4">
+                <div class="row g-3 g-md-4">
+                    <div class="col-4 col-md text-center">
+                        <div class="uslugi-icon mx-auto mb-2 mb-md-3 rounded-circle d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                            <img src="img/GPU.png" alt="Karty graficzne" style="width: 50px; height: 50px; object-fit: contain;">
+                        </div>
+                        <p class="fw-bold small mb-0">Karty graficzne</p>
+                    </div>
+                    <div class="col-4 col-md text-center">
+                        <div class="uslugi-icon mx-auto mb-2 mb-md-3 rounded-circle d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                            <img src="img/CPU.png" alt="Procesory" style="width: 50px; height: 50px; object-fit: contain;">
+                        </div>
+                        <p class="fw-bold small mb-0">Procesory</p>
+                    </div>
+                    <div class="col-4 col-md text-center">
+                        <div class="uslugi-icon mx-auto mb-2 mb-md-3 rounded-circle d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                            <img src="img/PC.png" alt="Gotowe zestawy" style="width: 50px; height: 50px; object-fit: contain;">
+                        </div>
+                        <p class="fw-bold small mb-0">Gotowe zestawy</p>
+                    </div>
+                    <div class="col-4 col-md text-center">
+                        <div class="uslugi-icon mx-auto mb-2 mb-md-3 rounded-circle d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                            <img src="img/smartphone.png" alt="Urządzenia mobilne" style="width: 50px; height: 50px; object-fit: contain;">
+                        </div>
+                        <p class="fw-bold small mb-0">Urządzenia mobilne</p>
+                    </div>
+                    <div class="col-4 col-md text-center">
+                        <div class="uslugi-icon mx-auto mb-2 mb-md-3 rounded-circle d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                            <img src="img/console.png" alt="Konsole" style="width: 50px; height: 50px; object-fit: contain;">
+                        </div>
+                        <p class="fw-bold small mb-0">Konsole</p>
+                    </div>
+                </div>
             </div>
         </div>
         
-        <div class="container" style="max-width: 600px;">
-            <h3 class="text-center mb-4">Formularz zgłoszenia naprawy</h3>
-            <form action="">
-                <div class="row mb-3 align-items-center">
-                    <div class="col-12 col-md-4 text-md-end">
-                        <label for="opis" class="form-label mb-md-0">Opis usterki</label>
+        <!-- Sekcja: Jak przebiega naprawa -->
+        <div class="container px-3 mb-5" style="max-width: 900px;">
+            <h3 class="text-center mb-4 fs-4 fs-md-3">Jak przebiega proces naprawy?</h3>
+            <div class="border border-primary border-2 p-3 p-md-4">
+                <div class="row g-3 g-md-4 text-center">
+                    <div class="col-12 col-md-4">
+                        <span class="step-number mb-3">1</span>
+                        <h5 class="mt-2">Zgłoszenie i diagnoza</h5>
+                        <p class="mb-0">Bezpłatna ocena usterki w ciągu 24-48h</p>
                     </div>
-                    <div class="col-12 col-md-8">
-                        <input type="text" class="form-control" name="opis" id="opis">
+                    <div class="col-12 col-md-4">
+                        <span class="step-number mb-3">2</span>
+                        <h5 class="mt-2">Wycena i naprawa</h5>
+                        <p class="mb-0">Szczegółowa wycena i realizacja naprawy</p>
                     </div>
-                </div>
-                
-                <div class="row mb-3 align-items-center">
-                    <div class="col-12 col-md-4 text-md-end">
-                        <label for="rodzaj" class="form-label mb-md-0">Rodzaj urządzenia</label>
-                    </div>
-                    <div class="col-12 col-md-8">
-                        <input type="text" class="form-control" name="rodzaj" id="rodzaj">
-                    </div>
-                </div>
-                
-                <div class="row mb-3 align-items-center">
-                    <div class="col-12 col-md-4 text-md-end">
-                        <label for="zdjecie" class="form-label mb-md-0">Zdjęcie usterki</label>
-                    </div>
-                    <div class="col-12 col-md-8">
-                        <input type="file" class="form-control" name="zdjecie" id="zdjecie">
+                    <div class="col-12 col-md-4">
+                        <span class="step-number mb-3">3</span>
+                        <h5 class="mt-2">Odbiór z gwarancją</h5>
+                        <p class="mb-0">Sprawny sprzęt z protokołem i gwarancją</p>
                     </div>
                 </div>
-                
-                <div class="row mb-3 align-items-center">
-                    <div class="col-12 col-md-4 text-md-end">
-                        <label for="e-mail" class="form-label mb-md-0">E-mail</label>
+            </div>
+        </div>
+
+        <!-- Sekcja: Cennik -->
+        <div class="container px-3 mb-5" style="max-width: 900px;">
+            <h3 class="text-center mb-4 fs-4 fs-md-3">Przykładowy cennik usług</h3>
+            <div class="border border-primary border-2 p-3 p-md-4">
+                <div class="row g-3 g-md-4 text-center">
+                    <div class="col-6 col-md-4">
+                        <h5 class="text-primary mb-2">Diagnostyka</h5>
+                        <p class="fw-bold mb-0 fs-4">0 zł</p>
                     </div>
-                    <div class="col-12 col-md-8">
-                        <input type="email" class="form-control" name="e-mail" id="e-mail">
+                    <div class="col-6 col-md-4">
+                        <h5 class="text-primary mb-2">Czyszczenie PC</h5>
+                        <p class="fw-bold mb-0 fs-4">od 80 zł</p>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <h5 class="text-primary mb-2">Naprawa GPU</h5>
+                        <p class="fw-bold mb-0 fs-4">od 200 zł</p>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <h5 class="text-primary mb-2">Wymiana ekranu</h5>
+                        <p class="fw-bold mb-0 fs-4">od 150 zł</p>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <h5 class="text-primary mb-2">Instalacja OS</h5>
+                        <p class="fw-bold mb-0 fs-4">od 100 zł</p>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <h5 class="text-primary mb-2">Budowa PC</h5>
+                        <p class="fw-bold mb-0 fs-4">od 300 zł</p>
                     </div>
                 </div>
-                
-                <div class="row mb-4 align-items-center">
-                    <div class="col-12 col-md-4 text-md-end">
-                        <label for="telefon" class="form-label mb-md-0">Nr. tel.</label>
+                <p class="text-center mt-3 mb-0" style="color: #999;">*Ceny orientacyjne. Dokładna wycena po diagnostyce.</p>
+            </div>
+        </div>
+
+        <!-- Sekcja: Zalety -->
+        <div class="container px-3 mb-5" style="max-width: 900px;">
+            <h3 class="text-center mb-4 fs-4 fs-md-3">Dlaczego warto wybrać nasz serwis?</h3>
+            <div class="border border-primary border-2 p-3 p-md-4">
+                <div class="row g-3 g-md-4 text-center">
+                    <div class="col-12 col-md-4">
+                        <h5 class="text-primary mb-2">Gwarancja</h5>
+                        <p class="mb-0">Do 12 miesięcy na wykonane naprawy</p>
                     </div>
+                    <div class="col-12 col-md-4">
+                        <h5 class="text-primary mb-2">Szybko</h5>
+                        <p class="mb-0">Większość napraw w 2-3 dni</p>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <h5 class="text-primary mb-2">Profesjonalnie</h5>
+                        <p class="mb-0">Ponad 10 lat doświadczenia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Sekcja: Sprawdź status naprawy -->
+        <div class="container px-3 mb-5" style="max-width: 900px;">
+            <h3 class="text-center mb-4 fs-4 fs-md-3">Sprawdź status naprawy</h3>
+            <div class="border border-primary border-2 p-3 p-md-4">
+                <p class="text-center mb-3">Wpisz numer naprawy, który otrzymałeś na e-mail po zgłoszeniu:</p>
+                <div class="row g-3 justify-content-center">
                     <div class="col-12 col-md-8">
-                        <input type="tel" class="form-control" name="telefon" id="telefon">
+                        <input type="text" class="form-control" placeholder="np. NAP-2025-001234" pattern="NAP-[0-9]{4}-[0-9]{6}">
+                        <div class="form-text" style="color: #ccc; font-weight: 500;">Format: NAP-RRRR-NNNNNN</div>
                     </div>
+                    <div class="col-12 col-md-4">
+                        <button type="button" class="btn btn-primary w-100">Sprawdź status</button>
+                    </div>
+                </div>
+                <p class="text-center mt-3 mb-0" style="color: #ccc; font-size: 0.95rem; font-weight: 500;">Po wysłaniu formularza zgłoszenia otrzymasz numer naprawy na podany e-mail.</p>
+            </div>
+        </div>
+        
+        <!-- Sekcja: Formularz -->
+        <div class="container px-3 mb-5" style="max-width: 900px;">
+            <h3 class="text-center mb-4 fs-4 fs-md-3">Formularz zgłoszenia naprawy</h3>
+            <form>
+                <div class="mb-3">
+                    <label for="opis" class="form-label">Opis usterki</label>
+                    <input type="text" class="form-control" name="opis" id="opis" required>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="rodzaj" class="form-label">Rodzaj urządzenia</label>
+                    <input type="text" class="form-control" name="rodzaj" id="rodzaj" required>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="zdjecie" class="form-label">Zdjęcie usterki (opcjonalne)</label>
+                    <input type="file" class="form-control" name="zdjecie" id="zdjecie" accept="image/*">
+                </div>
+                
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+                
+                <div class="mb-4">
+                    <label for="telefon" class="form-label">Nr. tel.</label>
+                    <input type="tel" class="form-control" name="telefon" id="telefon" pattern="[0-9+\s-]+" required>
                 </div>
                 
                 <div class="text-center">
-                    <button type="submit" class="btn btn-primary me-2">Wyślij</button>
+                    <button type="submit" class="btn btn-primary me-2 mb-2 mb-md-0">Wyślij</button>
                     <button type="reset" class="btn btn-secondary">Resetuj</button>
                 </div>
             </form>
         </div>
     </main>
     <footer class="footer mt-auto py-3 text-center">
-        <div class="container-fluid">
-            <p class="mb-0">Krzak Naprawy S.A. | Adres: ul. Łączna 44, 68-213 Lipinki łużyckie | E-mail: naprawy@krzak.pl | Tel.: +48 123 456 789</p>
+        <div class="container-fluid px-3">
+            <p class="mb-0 small">Krzak Naprawy S.A. | Adres: ul. Łączna 44, 68-213 Lipinki łużyckie | E-mail: naprawy@krzak.pl | Tel.: +48 123 456 789</p>
         </div>
     </footer>
     <script src="js/bootstrap.bundle.min.js"></script>
