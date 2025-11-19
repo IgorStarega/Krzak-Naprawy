@@ -1,4 +1,3 @@
-/* Global Styles */
 * {
     color: white;
 }
@@ -12,7 +11,6 @@ main {
     background-color: #1a1a1a;
 }
 
-/* Navigation */
 .navbar {
     background-color: #4169A8 !important;
 }
@@ -33,7 +31,6 @@ main {
     color: black !important;
 }
 
-/* Buttons */
 .btn-primary {
     background-color: #4169A8 !important;
     border: none !important;
@@ -52,7 +49,6 @@ main {
     background-color: #5a6268 !important;
 }
 
-/* Services Icons */
 .uslugi-icon {
     background-color: #4169A8;
 }
@@ -70,7 +66,6 @@ main {
     }
 }
 
-/* Service Page */
 .service-box {
     background-color: #2a2a2a;
     border: 1px solid #4169A8;
@@ -85,7 +80,6 @@ main {
     margin: 0 auto 50px auto;
 }
 
-/* Contact Page */
 .contact-form-container {
     max-width: 500px;
     width: 100%;
@@ -97,7 +91,6 @@ main {
     line-height: 1.6;
 }
 
-/* Form Controls */
 input.form-control,
 textarea.form-control,
 select.form-control {
@@ -126,12 +119,10 @@ select.form-control:focus {
     font-weight: 500;
 }
 
-/* Footer */
 .footer {
     background-color: #4169A8;
 }
 
-/* Info Cards */
 .info-card {
     background-color: #2a2a2a;
     border: 2px solid #4169A8;
@@ -144,7 +135,6 @@ select.form-control:focus {
     justify-content: center;
 }
 
-/* Price Items */
 .price-item {
     background-color: #2a2a2a;
     border-left: 4px solid #4169A8;
@@ -152,7 +142,6 @@ select.form-control:focus {
     margin-bottom: 15px;
 }
 
-/* Step Numbers */
 .step-number {
     background-color: #4169A8;
     color: white;
@@ -167,7 +156,6 @@ select.form-control:focus {
     margin-right: 15px;
 }
 
-/* Responsive adjustments */
 @media (max-width: 576px) {
     .navbar-brand {
         font-size: 0.9rem !important;
@@ -204,18 +192,15 @@ select.form-control:focus {
         font-size: 1rem !important;
     }
     
-    /* Zmniejszenie paddingu w sekcjach */
     .border-primary {
         padding: 15px !important;
     }
     
-    /* Zmniejszenie ikon na mobile */
     .uslugi-icon {
         width: 70px !important;
         height: 70px !important;
     }
     
-    /* Zmniejszenie step-number */
     .step-number {
         width: 35px !important;
         height: 35px !important;
@@ -223,7 +208,6 @@ select.form-control:focus {
         margin-right: 10px !important;
     }
     
-    /* Lepsze odstępy dla list */
     ul {
         padding-left: 1.2rem !important;
         font-size: 0.9rem;
@@ -233,18 +217,15 @@ select.form-control:focus {
         margin-bottom: 0.4rem;
     }
     
-    /* Mniejsze buttony */
     .btn-lg {
         padding: 0.5rem 1.5rem !important;
         font-size: 1rem !important;
     }
     
-    /* Zmniejszenie map na mobile */
     iframe {
         height: 200px !important;
     }
     
-    /* Formularz - mniejsze marginesy */
     .form-control {
         font-size: 0.9rem;
         padding: 0.5rem 0.75rem;
